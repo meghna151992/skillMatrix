@@ -1,0 +1,15 @@
+
+
+<div class="form-style-2">
+<div class="form-style-2-heading">Add Project</div>
+<form>
+<label for="field1"><span>Project Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" ng-model="project.projectName" /></label>
+<label for="field2"><span>Project ID <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" ng-model="project.projectID"/></label>
+
+<label for="field4"><span>Add Member</span><select name="field4" class="select-field" ng-model="project.member">
+<option ng-repeat="user in users" value="{{user._id}}">{{user.username}}</option>
+</select></label>
+
+<label><span>&nbsp;</span><input type="submit" value="Submit" ng-click="submit()"/></label>
+</form>
+</div>

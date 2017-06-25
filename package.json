@@ -1,0 +1,12 @@
+{
+  "name": "SKILLMATRIX",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "fs-extra": "^3.0.1",
+    "mongoose": "^4.10.2",
+    "path": "^0.12.7"
+  }
+}

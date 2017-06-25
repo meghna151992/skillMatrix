@@ -1,0 +1,29 @@
+<form>
+<div ng-if="!kamAdded">
+<div class="form-style-2">
+<div class="form-style-2-heading">Add KAM</div>
+<form>
+<label for="field1"><span>KAM Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" ng-model="project.kamName" /></label>
+
+<label><span>&nbsp;</span><input type="submit" value="Create New Kam" ng-click="createKAM()"/></label>
+</form>
+</div>
+</div>    
+    <div ng-if="kamAdded">
+    
+<div class="form-style-2">
+<div class="form-style-2-heading">Add Areas</div>
+<form>
+<label for="field1"><span>Area name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" ng-model="kam.areaname" /></label>
+    <label for="field2"><span>Required Level <span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" ng-model="kam.requiredLevel"/></label>
+
+<label><span>&nbsp;</span><input type="submit" value="Submit" ng-click="addArea()"/></label>
+</form>
+</div>
+    </div>    
+</form>
+
+
+
+
+

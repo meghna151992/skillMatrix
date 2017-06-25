@@ -1,0 +1,29 @@
+
+<div ng-if="isPM">
+
+<div class="form-style-2">
+<div class="form-style-2-heading">Welcome {{user}}</div>
+<form>
+
+    <a ui-sref="addProject"><label><span>&nbsp;</span><input type="submit" value="Add new project"/></label></a>
+<label for="field4"><span>Select Project</span><select name="field4" class="select-field" ng-model="project.id">
+<option ng-repeat="p in projectsList" value="{{p._id}}">{{p.project_name}}</option>
+</select></label>
+
+    <a ui-sref="kam"><label><span>&nbsp;</span><input type="submit" value="Next"/></label></a>
+</form>
+</div></div> 
+<div ng-if="!isPM">
+    <div class="form-style-2">
+<div class="form-style-2-heading">Welcome {{user}}</div>
+    <form>
+   
+   <label for="field4"><span>Select Project</span><select name="field4" class="select-field" ng-model="project.id">
+<option ng-repeat="p in projectsList" value="{{p._id}}">{{p.project_name}}</option>
+</select></label>
+
+    <a ui-sref="area"><label><span>&nbsp;</span><input type="submit" value="Next"/></label></a>
+    </form>
+</div>
+</div>
+
